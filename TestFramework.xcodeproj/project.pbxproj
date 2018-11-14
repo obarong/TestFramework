@@ -13,7 +13,18 @@
 		565D5AF7219BE8F200F89FDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565D5AF6219BE8F200F89FDB /* Assets.xcassets */; };
 		565D5AFA219BE8F200F89FDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565D5AF8219BE8F200F89FDB /* LaunchScreen.storyboard */; };
 		565D5AFD219BE8F200F89FDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 565D5AFC219BE8F200F89FDB /* main.m */; };
+		56E6D483219C4BD400810194 /* FrameworkProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E6D482219C4BD400810194 /* FrameworkProject.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		565D5B1C219BE9FC00F89FDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 565D5B18219BE9FB00F89FDB /* FrameworkProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 565D5B0D219BE9FB00F89FDB;
+			remoteInfo = FrameworkProject;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		565D5AEA219BE8ED00F89FDB /* TestFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +37,8 @@
 		565D5AF9219BE8F200F89FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		565D5AFB219BE8F200F89FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		565D5AFC219BE8F200F89FDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		565D5B18219BE9FB00F89FDB /* FrameworkProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FrameworkProject.xcodeproj; path = FrameworkProject/FrameworkProject.xcodeproj; sourceTree = "<group>"; };
+		56E6D482219C4BD400810194 /* FrameworkProject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FrameworkProject.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E6D483219C4BD400810194 /* FrameworkProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +56,10 @@
 		565D5AE1219BE8ED00F89FDB = {
 			isa = PBXGroup;
 			children = (
+				565D5B18219BE9FB00F89FDB /* FrameworkProject.xcodeproj */,
 				565D5AEC219BE8ED00F89FDB /* TestFramework */,
 				565D5AEB219BE8ED00F89FDB /* Products */,
+				565D5B21219BEEA400F89FDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +85,22 @@
 				565D5AFC219BE8F200F89FDB /* main.m */,
 			);
 			path = TestFramework;
+			sourceTree = "<group>";
+		};
+		565D5B19219BE9FB00F89FDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				565D5B1D219BE9FC00F89FDB /* FrameworkProject.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		565D5B21219BEEA400F89FDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56E6D482219C4BD400810194 /* FrameworkProject.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,12 +148,28 @@
 			mainGroup = 565D5AE1219BE8ED00F89FDB;
 			productRefGroup = 565D5AEB219BE8ED00F89FDB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 565D5B19219BE9FB00F89FDB /* Products */;
+					ProjectRef = 565D5B18219BE9FB00F89FDB /* FrameworkProject.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				565D5AE9219BE8ED00F89FDB /* TestFramework */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		565D5B1D219BE9FC00F89FDB /* FrameworkProject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FrameworkProject.framework;
+			remoteRef = 565D5B1C219BE9FC00F89FDB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		565D5AE8219BE8ED00F89FDB /* Resources */ = {
@@ -285,6 +333,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JUXE37R9T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TestFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +354,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JUXE37R9T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TestFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
