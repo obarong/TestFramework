@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <FrameworkProject/FrameworkProject.h>
+#import <BProject/BProject.h>
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *label1;
@@ -22,6 +23,9 @@
     
     [Hello sayHello];
     _label1.text = [Hello getHello];
+    
+    testA();
+    testB();
 }
 
 

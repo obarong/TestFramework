@@ -17,4 +17,5 @@ FOUNDATION_EXPORT const unsigned char FrameworkProjectVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <FrameworkProject/PublicHeader.h>
 
 #import <FrameworkProject/NSObject+Hello.h>
+#import <FrameworkProject/a.h>
 

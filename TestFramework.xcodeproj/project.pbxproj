@@ -17,6 +17,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		561C3F1B22731A09004EF0CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 561C3F1722731A08004EF0CE /* BProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 561C3F0C22731A08004EF0CE;
+			remoteInfo = BProject;
+		};
 		565D5B1C219BE9FC00F89FDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 565D5B18219BE9FB00F89FDB /* FrameworkProject.xcodeproj */;
@@ -27,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		561C3F1722731A08004EF0CE /* BProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BProject.xcodeproj; path = BProject/BProject.xcodeproj; sourceTree = "<group>"; };
 		565D5AEA219BE8ED00F89FDB /* TestFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		565D5AED219BE8ED00F89FDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		565D5AEE219BE8ED00F89FDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,9 +61,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		561C3F1822731A08004EF0CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				561C3F1C22731A09004EF0CE /* BProject.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		565D5AE1219BE8ED00F89FDB = {
 			isa = PBXGroup;
 			children = (
+				561C3F1722731A08004EF0CE /* BProject.xcodeproj */,
 				565D5B18219BE9FB00F89FDB /* FrameworkProject.xcodeproj */,
 				565D5AEC219BE8ED00F89FDB /* TestFramework */,
 				565D5AEB219BE8ED00F89FDB /* Products */,
@@ -150,6 +167,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 561C3F1822731A08004EF0CE /* Products */;
+					ProjectRef = 561C3F1722731A08004EF0CE /* BProject.xcodeproj */;
+				},
+				{
 					ProductGroup = 565D5B19219BE9FB00F89FDB /* Products */;
 					ProjectRef = 565D5B18219BE9FB00F89FDB /* FrameworkProject.xcodeproj */;
 				},
@@ -162,6 +183,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		561C3F1C22731A09004EF0CE /* BProject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BProject.framework;
+			remoteRef = 561C3F1B22731A09004EF0CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		565D5B1D219BE9FC00F89FDB /* FrameworkProject.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
